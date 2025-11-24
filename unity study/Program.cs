@@ -8,7 +8,8 @@
 
             //while
             //for
-            //
+            //dowhile - 조건이 참이면 아니든 무조건 한 번은 실행
+
 
 
 
@@ -29,14 +30,42 @@
             // 출력 후 num을 1씩 증가.
 
 
-            int num = 1;
+            //int num = 1; //초기화
 
-            while (num <= 10) // 무한루프
+            ////while (num <= 10) // 무한루프
+            ////{
+            ////    Console.WriteLine(num);
+            ////    num++;
+            ////}
+
+
+            //do 
+            //{
+            //    Console.WriteLine("무조건 한번은 실행된다");
+            //    num++; //조건 변경
+            //} while (num < 11); // 조건
+
+
+
+            //for (조건 초기화; 조건; 조건변경) { }
+
+
+
+            // 2단 -> 2 * 1 = 2
+            //        2 * 2 = 4
+            //        .
+            //        9 * 8 = 72
+
+
+            for (int n = 2; n < 10; n++)
             {
-                Console.WriteLine(num);
-                num++;
-            }
+                Console.WriteLine($"{n}단");
 
+                for (int m = 1; m < 10; m++)
+                {
+                    Console.WriteLine($"{n} * {m} = {n * m}");
+                }
+            }
 
         }
     }
